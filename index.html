@@ -1,52 +1,438 @@
-<!doctype html>
-<html>
-<head>
-<title>Kinh Tối</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=12.0, user-scalable=yes"">
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.50 em;
-  }
-  h1 { font-size: 0.25 em; }
-</style>
+
+<!DOCTYPE html> <html><head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+$(function() {
+ for (let i = 1; i <= 9; i++)
+  $("#ngay" + i).hide();
+ var now = new Date();
+ var start = new Date(now.getFullYear(), 0, 0);
+ var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+ var oneDay = 1000 * 60 * 60 * 24;
+ var day = Math.floor(diff / oneDay);
+ $("#ngay"+(day%9+1)).show();
+});
+</script>
 </head>
 <body>
 
-<h1>Kinh Cáo Mình</h1>
-<p>Tôi thú nhận cùng Thiên Chúa toàn năng và cùng anh chị em. Tôi đã phạm tội nhiều trong tư tuởng, lời nói, việc làm và những điều thiếu sót:</p>
-<p>lỗi tại tôi, lỗi tại tôi, lỗi tại tôi mọi đàng.</p>
-<p>Vì vậy tôi xin Đức Bà Maria trọn đời đồng trinh, các thiên thần, các thánh và anh chị em, khẩn cầu cho tôi trước tòa Thiên Chúa, Chúa chúng ta.</p>
-<p>Amen.</p>
-<hr/>
+<div>
+  <h2>Kinh Thú Nhận</h2>
+  <p>Tôi thú nhận cùng Thiên Chúa toàn năng và cùng anh chị em. Tôi đã phạm tội nhiều trong tư tưởng, lời nói việc làm, và những điều thiếu xót.</p>
+  <p>Lỗi tại tôi, lỗi tại tôi, lỗi tại tôi mọi đàng.</p>
+  <p>Vì vậy tôi xin Ðức Bà Maria trọn đời đồng trinh, các thiên thần, các thánh, và anh chị em khẩn cầu cho tôi trước tòa Thiên Chúa, Chúa chúng ta. Amen.</p>
+</div>
 
-<h1>Kinh Kính Thánh Martin De Porres</h1>
-<p>Lạy Thánh Martino rất khiêm nhường, lòng thương yêu nồng nhiệt của Người chẳng những che chở các anh em túng nghèo, mà lại cả những thú vật ngoài đồng. Thật là gương huy hoàng của đức bác ái. Chúng con kính mừng và cầu khấn Người.</p>
-<p>Từ tòa cao Người ngự, xin đoái thương nhậm lời anh em túng nghèo kêu xin, để chúng con được bắt chước nhân đức Người, mà yên vui trong địa vị Chúa đã đặt, và được mạnh mẽ, can đảm vác Thánh Giá theo chân Chúa Cứu Thế và Mẹ Sầu Bi. Sau hết được về nước Thiên Ðàng. Vì công nghiệp Chúa Giêsu Kitô là Chúa chúng con. Amen.</p>
-<hr/>
-  
-<h1>Kinh Ăn Năn Tội</h1>
-<p>Lạy Chúa con, Chúa là Đấng trọn tốt trọn lành vô cùng. Chúa đã dựng nên con, và cho Con Chúa ra đời chịu nạn chịu chết vì con, mà con đã cả lòng phản nghịch lỗi nghĩa cùng Chúa, thì con lo buồn đau đớn, cùng chê ghét mọi tội con trên hết mọi sự; con dốc lòng chừa cải, và nhờ ơn Chúa thì con sẽ lánh xa dịp tội cùng làm việc đền tội cho xứng.</p>
-<p>Amen</p>
-<hr/>
+<div>
+  <h2>Kinh Ăn Năn Tội</h2>
+  <p>Lạy Chúa con, Chúa là Đấng trọn tốt trọn lành vô cùng. Chúa đã dựng nên con, và cho Con Chúa ra đời chịu nạn chịu chết vì con, mà con đã cả lòng phản nghịch lỗi nghĩa cùng Chúa, thì con lo buồn đau đớn, cùng chê ghét mọi tội con trên hết mọi sự; con dốc lòng chừa cải, và nhờ ơn Chúa thì con sẽ lánh xa dịp tội cùng làm việc đền tội cho xứng.</p>
+  <p>Amen</p>
+</div>
 
-<h1>Kinh Tin Kính (Các Thánh Tông Đồ)</h1>
-<p>Tôi tin kính Đức Chúa Trời, là Cha phép tắc vô cùng dựng nên trời đất.</p>
-<p>Tôi tin kính Đức Chúa Giêsu Kitô là Con Một Đức Chúa Cha, cùng là Chúa chúng tôi, bởi phép Đức Chúa Thánh Thần mà Người xuống thai sinh bởi Bà Maria Đồng Trinh, chịu nạn đời quan Phongxiô Philatô, chịu đóng đanh trên cây Thánh giá, chết và táng xác, xuống ngục tổ tông, ngày thứ ba bởi trong kẻ chết mà sống lại, lên trời ngự bên hữu Đức Chúa Cha phép tắc vô cùng, ngày sau bởi trời lại xuống phán xét kẻ sống và kẻ chết.</p>
-<p>Tôi tin kính Đức Chúa Thánh Thần. Tôi tin có Hội Thánh hằng có ở khắp thế này, các thánh thông công. Tôi tin phép tha tội. Tôi tin xác loài người ngày sau sống lại. Tôi tin hằng sống vậy.</p>
-<p>Amen</p>
-<hr/>
-  
-<h1>Kinh Thánh Cêcilia</h1>
+<div>
+  <h2>Kinh Tin Kính</h2>
+  <p>Tôi tin kính Đức Chúa Trời là Cha phép tắc vô cùng dựng nên trời đất.</p>
+  <p>Tôi tin kính Đức Chúa Giêsu Kitô là Con Một Đức Chúa Cha cùng là Chúa chúng tôi; bởi phép Đức Chúa Thánh Thần mà Người xuống thai, sinh bởi Bà Maria đồng trinh: chịu nạn đời quan Phong-xi-ô Philatô, chịu đóng đanh trên cây Thánh-giá, chết và táng xác; xuống ngục tổ tông, ngày thứ ba bởi trong kẻ chết mà sống lại; lên trời ngự bên hữu Đức Chúa Cha phép tắc vô cùng; ngày sau bởi trời lại xuống phán xét kẻ sống và kẻ chết.</p>
+  <p>Tôi tin kính Đức Chúa Thánh Thần. Tôi tin có Hội Thánh hằng có ở khắp thế này, các thánh thông công. Tôi tin phép tha tội. Tôi tin xác loài người ngày sau sống lại. Tôi tin hằng sống vậy.</p><p>Amen</p>
+</div>
+
+<div>
+  <h2>Lòng Thương Xót Chúa</h2>
+  <p>Lạy Cha Hằng Hữu, con xin dâng Cha Mình, Máu, Linh hồn, và Thiên tính của Con yêu dấu Cha là Đức Giêsu Kitô, Chúa chúng con, để đền tạ tội lỗi chúng con và tội lỗi toàn thế giới.</p>
+  <p>10x - Vì cuộc tử nạn đau buồn của Chúa Giêsu, xin thương xót chúng con và toàn thế giới.</p>
+  <p>3x - Lạy Cha Chí Thánh, Đấng Toàn Năng, Đấng Hằng Hữu, xin thương xót chúng con và toàn thế giới.</p>
+  <p>3x - Ôi, Máu và Nước tuôn ra từ Trái Tim Chúa Giêsu để nên nguồn mạch Lòng Thương Xót cho chúng con, con tin cậy vào Chúa.</p>
+</div>
+
+<div>
+  <h2>Kinh Lạy Nữ Vương</h2>
+  <p>Lạy Nữ Vương, Mẹ nhân lành, làm cho chúng con được sống, được vui, được cậy, thân lạy Mẹ! Chúng con, con cháu E-và ở chốn khách đầy kêu đến cùng Bà, chúng con ở nơi khóc lóc than thở kêu khẩn Bà thương.</p>
+  <p>Hỡi ôi! Bà là Chủ bầu chúng con, xin ghé mắt thương xem chúng con. Đến sau khỏi đày, xin cho chúng con được thấy Đức Chúa Giêsu con lòng Bà gồm phúc lạ. Ôi khoan thay, nhân thay, dịu thay, Thánh Maria trọn đời đồng trinh. Amen.</p>
+</div>
+
+<h2>Tuần Cửu Nhật Kính Đức Mẹ La Vang</h2>
+<div id="ngay1">
+<p>NGÀY THỨ NHẤT:</p>
+<p>Lạy Đức Mẹ La Vang, con hết lòng tin cậy vững vàng. Mẹ đầy lòng nhân từ lân ái, Mẹ thương hết mọi người như con cái Mẹ vậy.</p>
+<p> Muốn chứng tỏ 
+lòng Mẹ nhân từ hay thương, Mẹ đã chọn thành nọ xứ kia 
+trong các nước thiên hạ làm nơi riêng của Mẹ,để ban bố mọi 
+ơn cho những kẻ đến cầu khẩn cùng Mẹ. </p> <p> Tuy nước 
+Việt Nam này nhỏ hẹp, số giáo dân còn ít ỏi, song Mẹ rất 
+nhân từ khoan hậu đã chọn chốn La Vang làm chốn riêng Mẹ, 
+để ban phát mọi ơn phước cho con cái Việt Nam được nhờ. 
+</p> <p> Ôi! Một sự này đã làm cho con nức lòng trông cậy 
+vững vàng Mẹ đã thương con sẽ nhận lời con, và sẽ ban ơn 
+lành theo ý con cầu khẩn cùng Mẹ. </p> <p> Xin Mẹ cho con 
+được thấu hiểu lòng Mẹ thương con chí thiết là ngần nào. 
+Con xưng thật, trừ ra Đức Chúa Trời là nguồn mạch tình 
+thương vô cùng, thì chẳng có ai thương con cho bằng Mẹ. Xin 
+Mẹ ban ơn cho con được lòng trìu mến Mẹ, cho tận tình con 
+thảo. </p> <p> Lạy Đức Mẹ La Vang, con hết lòng trông cậy 
+chạy đến khẩn cầu cùng Mẹ một ơn riêng...( kể ra ý nguyện 
+xin ) trong tuần cửu nhật nầy. Xin Mẹ giúp con được thêm 
+lòng trông cậy vững vàng, được biết đàng cầu nguyện sốt 
+sắng cho đáng Mẹ nhận lời con kêu xin. </p> <p> Nhân danh 
+Chúa Giêsu là Con yêu dấu của Mẹ, xin Mẹ nhận lời con khẩn 
+nguyện. Amen. </p> <p></p>
+</div><div id="ngay2">
+<p>NGÀY THỨ HAI: </p> <p> Lạy Đức Mẹ La Vang, khắp nước này 
+nhiều nơi phồn thịnh, nhiều chỗ thắng cảnh, song Mẹ chẳng 
+chọn, mà chọn chốn La Vang là nơi rừng rú thanh u tĩnh 
+mịch, chẳng khác nào Mẹ tỏ ý cho con được biết rằng: muốn 
+cho Mẹ nhận lời con cầu nguyện, con phải xa lánh sự xôn xao 
+trần tục, sự kiêu hãnh phô trương thói đời và phải ở cùng 
+Mẹ tận tình thiết ái, phải thở than cùng Mẹ cho thân mật 
+thâm trầm, khác nào như tìm đến khẩn cầu cùng Mẹ nơi thanh 
+vắng, bày tỏ riêng tư cùng Mẹ mọi nỗi âu lo, mọi cơn túng 
+ngặt xứng tình con thảo trông cậy Mẹ lành. </p> <p> Ôi! 
+Muôn vàn thánh nam nữ xưa nay hàng ở tận tình chí thiết 
+cùng Mẹ là ngần nào, và bởi đó được Mẹ thương yêu cùng 
+xuống muôn ơn lành là thế nào. </p> <p> Con xưng thật Mẹ 
+cũng thương con vô ngần, bởi lòng thương ấy, Mẹ muốn cho 
+con lấy hết tình con thảo mà tin cậy trìu mến Mẹ, chạy đến 
+cùng Mẹ mọi lúc gian nan, song Mẹ biết rõ lòng con ơ hờ 
+lãnh đạm với Mẹ là ngần nào. Cúi xin Mẹ ban ơn cho con được 
+lòng trìu mến trông cậy Mẹ luôn, để con càng ở tận tình tận 
+nghĩa với Mẹ bao nhiêu, thì được nhờ các ơn Mẹ bấy nhiêu! 
+</p> <p> Lạy Đức Mẹ La Vang, là Mẹ rất nhân từ lân ái, con 
+tin thật Mẹ sẵn lòng nghe lời con khấn nguyện, và ban cho 
+con được ơn con xin cùng Mẹ trong tuần này. Nhân danh Đức 
+Chúa Giêsu là Con yêu dấu Mẹ, xin Mẹ nhận lời con khấn 
+nguyện. Amen.
+ </p> <p></p>
+</div><div id="ngay3"><p> NGÀY THỨ BA: </p> <p> Lạy Đức Mẹ La Vang, 
+xưa giáo hữu này phải cơn bắt bớ chém giết tàn hại, nhiều 
+kẻ trốn đến ẩn náu nơi rừng núi La Vang, đêm ngày áy náy lo 
+buồn sợ hãi, kêu đến cùng Mẹ. Mẹ đã động tình thương xót, 
+hiện đến ủi an cứu giúp mọi người phần hồn, phần xác, và 
+chữa lành mọi cơn đau ốm bệnh hoạn. </p> <p> Sự ấy đã nên 
+tang chứng rõ ràng: lòng Mẹ rất nhân từ lân ái hay thương 
+là thế nào. Ôi! Chớ chi con được lòng sốt sắng cậy trông 
+kêu đến cùng Mẹ, như những người thuở ấy! Chớ chi con được 
+phúc Mẹ đến viếng thăm con, an ủi con và ban cho con ơn con 
+xin cùng Mẹ bây giờ. </p> <p> Lạy Đức Mẹ La Vang, là Đấng 
+hay yên ủi kẻ âu lo, là Mẹ hằng phù hộ các giáo hữu, kìa ma 
+quỷ thế gian, xác thịt cùng muôn vàn sự khốn khổ tai nạn 
+phần xác phần hồn đang vây phủ con tứ bề. Ôi! Con hết lòng 
+trông cậy chạy đến cùng Mẹ. Con tin thật Mẹ cũng thương con 
+như đã thương những người thuở ấy. Mẹ sẵn lòng ban ơn cho 
+con như đã rộng tay ban mọi ơn phước cho những kẻ ấy. </p> 
+<p> Ôi! Con hết lòng nài xin ơn Mẹ, xưa nay chưa từng nghe 
+ai chạy đến kêu xin cùng Mẹ mà Mẹ từ bỏ chẳng nhận lời. 
+</p> <p> Lạy Mẹ rất bao dung, lạy Nữ Vương rất vinh hiển, 
+lạy Mẹ Đức Chúa Trời, xin Mẹ chớ từ bỏ con, một xin rủ lòng 
+thương mà nhận lời con kêu xin. </p> <p> Nhân danh Đức Chúa 
+Giêsu là Con rất yêu dấu Mẹ, xin Mẹ nhận lời con khẩn 
+nguyện, Amen. </p> <p></p> </div><div id="ngay4"><p>
+ 
+NGÀY THỨ TƯ: </p> <p> Lạy Đức Mẹ La Vang, từ ngày Mẹ hiện 
+đến cùng chọn chốn La Vang làm nơi riêng Mẹ cho đến nay, Mẹ 
+đã ban phát vô số ơn lành cho mọi kẻ đến kêu xin với Mẹ, 
+bất luận kẻ giáo người lương. Hễ ai thật lòng kêu xin thì 
+Mẹ sẵn lòng giúp đỡ. Chẳng những là các kẻ đến cầu khẩn tại 
+La Vang, mà lại những người vì xa xôi, vì ốm liệt hoặc vì 
+ngăn trở nào khác mà chẳng đến được, chỉ một lòng trông cậy 
+kêu đến Mẹ La Vang, tất cả đều được ơn Mẹ cứu chữa. </p> 
+<p> Ôi! Có lẽ nào một mình con vô phước mà chẳng nhờ ơn Mẹ 
+sao? Mẹ thấy ai mắc vòng lao lý gian truân, Mẹ đều động 
+tình thương xót, có lẽ nào Mẹ thấy con đang khốn khó kêu 
+van mà Mẹ đành từ bỏ. </p> <p> Lạy Đức Mẹ La Vang, con xưng 
+thật, vốn ơ hờ nguội lạnh, tội tình khốn khổ, chẳng đáng 
+cho Mẹ thương đến. Song, lạy Mẹ từ bi nhân hậu, con dám 
+thưa cùng Mẹ rằng: ai đáng cho Mẹ đem lòng thương xót hơn, 
+chẳng phải là kẻ khốn nạn hơn sao? Lại thương kẻ chẳng đáng 
+thương thì lòng thương ấy càng rạng rỡ. </p> <p> Ôi! Sự con 
+chẳng đáng thương đã không làm cho con nản chí ngã lòng, 
+lại càng làm cho con thêm lòng trông cậy sẽ được ơn Mẹ 
+thương đoái mà thôi. Xin Mẹ hãy làm cho thế gian bỡ ngỡ, 
+cho thần thánh hoan hô khen ngợi là hôm nay Mẹ Đức Chúa 
+Trời cao sang vinh hiển đã đoái thương nhận lời kẻ hèn mọn 
+này kêu xin. </p> <p> Nhân danh Đức Chúa Giêsu là Con yêu 
+dấu Mẹ, xin Mẹ nhận lời con khẩn nguyện. Amen.
+ </p> <p></p></div><div id="ngay5"> <p> NGÀY THỨ NĂM: </p> <p> Lạy Đức Mẹ La 
+Vang, xưa nay từ Nam chí Bắc, nhờ ơn Mẹ, biết bao nhiêu 
+người nguội lạnh đã nên sốt sắng, bao nhiêu người sa đàng 
+tội lỗi được ơn trở lại, bao nhiêu người bối rối âu lo phần 
+hồn, buồn phiền việc gia đạo, hoặc lo sợ nỗi sinh nhai đã 
+được ơn Mẹ gỡ rối, ủi an giúp đỡ. Nhiều kẻ không con cầu 
+xin đến Mẹ, thì đã được như ý sở cầu. Nhiều kẻ ốm đau bệnh 
+hoạn đã được lành mạnh, cùng muôn vàn ơn khác kể chẳng 
+xiết. </p> <p> Ôi! Con xưng thật: Mẹ rất có thần thế trước 
+Tòa Chúa. Vì dầu các thánh xưa nay, về đàng nhơn đức, về 
+nẻo trọn lành còn kém xa Mẹ muôn trùng, mà cũng được thế 
+lớn trước tòa Chúa, làm được nhiều phép lạ, chuyển cầu được 
+nhiều ơn cho kẻ khác nhờ. Huống chi Mẹ rất trọn lành chí 
+thánh, đẹp lòng Chúa mọi đàng, ắt quyền thế Mẹ lớn lao là 
+dường nào! Con tin thật Chúa đã phú giao mọi ơn Chúa trong 
+tay Mẹ, Mẹ muốn phân phát cho ai khi nào, những ơn nào thì 
+mặc theo ý Mẹ. Muôn ơn lành Mẹ ban xuống xưa nay tại chốn 
+La Vang đủ làm chứng sự ấy, lại tỏ bày cho con được biết Mẹ 
+có lòng thương xót con cái Việt Nam là ngần nào! </p> <p> 
+Lạy Đức Mẹ La Vang, là Đấng cầm quyền phân phát mọi ơn 
+Chúa, nay con hết lòng trông cậy chạy đến cầu khẩn cùng Mẹ, 
+con ngửa mặt giơ tay lên cầu cứu cùng Mẹ. Lạy Mẹ rất nhân 
+từ lân ái, dưới Đức Chúa Trời thì con chỉ trông cậy một 
+mình Mẹ. Nếu Mẹ từ bỏ con, thì con biết chạy đến cùng ai? 
+</p> <p> Nhân danh Đức Chúa Giêsu là Con yêu dấu Mẹ, xin Mẹ 
+nhận lời con khấn nguyện. Amen. </p> <p></p>
+</div><div id="ngay6"><p>NGÀY THỨ SÁU: </p> <p> Lạy Đức Mẹ La Vang, đã lẫy lừng khắp 
+cả nước nầy, cùng vang dội nhiều nơi xa lạ. </p> <p> Đức Mẹ 
+La Vang! Ấy thật là tên rất êm ái dịu ngọt, có sức an ủi kẻ 
+âu lo, khêu gợi lòng trông cậy, là nhóm lên ngọn lửa yêu 
+mến nồng cháy. Vừa nghe đến tên Đức Mẹ La Vang, thì lòng ai 
+nấy vui mừng hớn hở như nhìn thấy trước mặt một Mẹ rất nhân 
+lành khoan hậu, một Mẹ đầy sự yêu thương chí thiết, một Mẹ 
+quyền thế vô song, một Mẹ hay làm phép lạ cứu người. </p> 
+<p> Con tin thật chúa đã nắn đúc lòng Mẹ đầy tình thương 
+xót khi thấy ai mắt vòng khốn khó gian truân. Xưa khi Mẹ 
+còn sống ở đời, Mẹ đã từng thấy mọi nỗi gian nan khốn khó, 
+Mẹ đã rộng lòng thương xót, đã thi ân giúp đỡ cứu vớt mọi 
+người. </p> <p> Nay Mẹ ở trên trời hưởng muôn phần vinh 
+phước thanh nhàn, xin Mẹ đoái đến con đang lâm lụy giữa 
+chốn trần ai khổ nạn. </p> <p> Lạy Mẹ rất đáng mến thương, 
+nếu con chẳng trông cậy Mẹ, thì biết trông cậy vào ai? Như 
+con nít kia đòi Mẹ nó, nó càng thấy Mẹ nó xua nó ra thì 
+càng khóc la tràn vào lòng Mẹ nó, và sau hết Mẹ ẵm con vào 
+lòng tỏ tình thương yêu chí thiết. Lạy Đức Mẹ, con cũng một 
+lòng trông cậy như vậy. Càng thấy Mẹ như từ rẫy lời con kêu 
+van, thì con càng gắn bó xin nài, và tin chắc cuối cùng Mẹ 
+sẽ thương xót nhận lời con. </p> <p> Lạy Đức Mẹ La Vang, 
+xin chớ để lòng con trông cậy Mẹ ra luống công vô ích. 
+Maria Mẹ nhân lành xin Mẹ thương con cùng. </p> <p> Nhân 
+danh Chúa Giêsu là Con yêu dấu Mẹ xin Mẹ nhận lời con khẩn 
+nguyện. Amen. </p> <p></p>
+</div><div id="ngay7">
+<p> NGÀY THỨ BẢY:</p> <p> Lạy 
+Đức Mẹ La Vang, Mẹ đã tỏ lòng thương yêu chí thiết mà chọn 
+chốn La Vang để ban bố mọi ơn lành cho con dân Việt Nam, 
+chẳng từ bỏ ai.</p> <p> Những cỏ cây đá gạch, nước suối ở 
+quanh Đền Thánh La Vang là những vật hèn, song bởi lòng Mẹ 
+thương yêu con cái nhiều phen Mẹ đã thông cho các vật ấy 
+một sức thần diệu, chữa các tật nguyền bệnh hoạn. Ấy là Mẹ 
+có ý cho con hiểu biết rằng: các vật hèn dưới chân Mẹ, có 
+chút hơi hướng thuộc về Mẹ, mà còn được sức nhiệm mầu như 
+vậy, thì chính Mẹ là Mẹ chính Đức Chúa Trời, là Nữ Vương 
+trên trời dưới đất, Mẹ có quyền phép lạ lùng biết là ngần 
+nào.</p> <p> Ôi! Mẹ cao sang khôn ví, Mẹ quyền thế vô ngần. 
+Dưới Đức Chúa Trời chẳng có ai oai quyền phép tắc cho bằng 
+Mẹ, Mẹ muốn thế nào thì nên thế ấy. Sự ấy càng hối thúc con 
+trông cậy Mẹ. Con xin hiệp cùng thần thánh trên trời và mọi 
+người lành dưới thế, mà chúc tụng ngợi khen, mà hát mừng 
+quyền phép lạ.</p> <p> Lạy Đức Mẹ La Vang, con hết lòng 
+trông cậy chạy đến xin nhờ quyền thế phép tắc Mẹ.</p> <p> 
+Người mẹ kia thấy đứa con nào ốm yếu đau thương hoặc lâm 
+rủi ro tai nạn thì động lòng thương xót, an ủi săn sóc nó 
+hơn các con khác. Huống chi Đức Mẹ, là Mẹ rất nhân từ khoan 
+hậu, có lòng thương con hơn mẹ thế gian thương con mình bội 
+phần, nay Mẹ thấy con ưu sầu cất tiếng kêu van đến Mẹ, lẽ 
+nào Mẹ chẳng chạnh lòng thương đoái con sao? Con tin thật: 
+Mẹ đã nghe tiếng con kêu xin. Mẹ đang ngó nhìn con cách 
+thống thiết. Mẹ đang sẵn sàng ban ơn xuống cho con.</p> <p> 
+Ôi! Maria! Mẹ nhân lành, con trông cậy một mình Mẹ.</p> <p> 
+Nhân danh Đức Chúa Giêsu là Con Mẹ yêu dấu xin Mẹ nhận lời 
+con khẩn nguyện. Amen.</p> <p></p>
+</div><div id="ngay8"><p>NGÀY THỨ TÁM:</p> <p> Lạy Đức Mẹ La Vang, xin Mẹ hãy chứng 
+tỏ: Mẹ đã chọn chốn La Vang làm chốn riêng Mẹ, để ban bố 
+mọi ơn phước. Mẹ có lòng thương yêu cõi nước này cách 
+riêng, và Mẹ chẳng hề từ bỏ ai trông cậy cầu khẩn với Mẹ 
+bao giờ.</p> <p> Lạy Mẹ, nếu Mẹ chẳng ban ơn cho con, ắt 
+con có lẽ nghi ngờ rằng: Mẹ đã bỏ chốn La Vang, Mẹ chẳng 
+còn nhận lời kẻ chạy đến kêu xin cùng Mẹ.</p> <p> Ôi! Có lẽ 
+nào Mẹ để con và ai nấy nghi ngờ thế ấy sao? Có lẽ nào Mẹ 
+để cho danh tiếng Đức Mẹ La Vang đã lừng lẫy xưa nay, rày 
+ra như chẳng còn linh ứng nữa sao? Có lẽ nào Mẹ để con phải 
+thẹn thuồng xấu hổ, vì đã cậy trông Mẹ uổng công vô ích 
+sao?</p> <p> Xưa bà ngoại giáo Cananêa chạy theo Đức Chúa 
+Giêsu, đã mấy lần kêu van nài xin Chúa Giêsu thương chữa 
+cho con mình lành đã. Song Chúa Giêsu dường như chẳng thèm 
+ngó lại và sau hết đã chối hẳn không làm phép lạ cho kẻ 
+ngoại giáo. Bấy giờ bà ấy thưa rằng: đã hay Chúa dành để 
+các ơn lạ cho con cái Chúa là dân Do Thái, phần con là kẻ 
+ngoại giáo chẳng đáng nhờ ơn chúa. Song, Lạy Chúa, loài hèn 
+súc vật cũng nhờ được hạt cơm rơi dưới bàn chủ nó. Đức Chúa 
+Giêsu liền dừng chân đứng lại, khen đức tin bà ấy và phán 
+rằng: bởi bà có lòng tin làm vậy, thì Ta ban cho con bà 
+được lành đã. Ôi! Lạy Đức Mẹ La Vang, dầu con là kẻ phàm 
+hèn tội lỗi, chẳng đáng cho Mẹ thương đến, như các con hiếu 
+thảo của Mẹ. Song, Lạy Mẹ rất nhân từ, con dám xin cùng Mẹ 
+cho con được nhờ hột cơm rơi, nhờ chút phước dư của Mẹ. Ôi! 
+Chớ chi con được nghe lời Mẹ phán cùng con như lời của Chúa 
+đã phán xưa cùng bà Cananêa rằng: Bởi con có lòng tin cậy 
+Mẹ, thì Mẹ ban cho con như ý con xin. Ôi! Lạy Mẹ dấu yêu 
+con tin lòng Mẹ, con trông cậy Mẹ. Xin Mẹ phán một lời, thì 
+con sẽ được vui mừng thỏa chí.</p> <p> Nhân danh Đức Chúa 
+Giêsu là Con yêu dấu Mẹ, xin Mẹ nhận lời con khấn nguyện. 
+Amen.</p> <p></p>
+</div><div id="ngay9"><p>NGÀY THỨ CHÍN:</p> <p> Lạy Đức Mẹ La Vang, hôm nay là ngày 
+cuối Tuần Cửu Nhật, con hết lòng tha thiết nài xin Mẹ và 
+kêu đến lòng nhân từ Mẹ, xin Mẹ ban ơn cho con xin cùng 
+Mẹ.</p> <p> Ôi! Mẹ thấy rõ ràng con trông cậy Mẹ là ngần 
+nào! Mẹ muốn cứu giúp con, thì chẳng có khó gì, xin Mẹ hãy 
+phán một lời thì con sẽ được thỏa lòng ao ước. Con trông 
+cậy một mình Mẹ, nếu Mẹ làm ngơ ngoảnh mặt thì con sẽ ngã 
+lòng trông cậy chẳng biết chạy đến cùng ai, nhờ ai chuyển 
+cầu cho con được nữa.</p> <p> Maria, Mẹ ôi! Con tràn vào 
+lòng Mẹ. Lạy Đức Mẹ La Vang là chính sự trông cậy lòng 
+con.</p> <p> Mấy ngày này, mỗi lần con chạy đến cùng Mẹ thì 
+lòng con đầy sự trong cậy vững vàng: sẽ được ơn Mẹ ủi an, 
+nhận lời. Có lẽ nào hôm nay cuối Tuần Cửu Nhật, Mẹ đành để 
+con ra về buồn phiền hổ thẹn vì chẳng được Mẹ thương đoái 
+nhận lời sao? Mẹ ôi! nỡ nào Mẹ chối bỏ lời con cho đành 
+sao?</p> <p> Lạy Đức Mẹ La Vang, con tin thật Mẹ đang ngoái 
+nhìn con cách dấu yêu chí thiết, tỏ vẻ vui lòng vì thấy con 
+có lòng tin cậy Mẹ như con hiếu thảo vậy.</p> <p> Con chắc 
+Mẹ đã nhận lời con khấn nguyện. Mẹ sẽ ban cho con ơn con 
+kêu xin cùng Mẹ, hay là ơn nào khác Mẹ biết cần kíp cho con 
+hơn, hữu ích hơn và quý trọng hơn.</p> <p> Lạy Mẹ, lòng con 
+khấp khởi nửa mừng, nửa sợ. Mừng vì biết Mẹ động lòng 
+thương xót, biết Mẹ quyền thế vô song, biết lời con cầu 
+nguyện đã thấu đến tòa Mẹ. Song con lại sợ lòng con yếu 
+đuối, chưa tin cậy lòng nhân từ phép tắc Mẹ cho đủ, chưa 
+cầu nguyện cho tận tình tha thiết.</p> <p> Lạy Mẹ! Xin chớ 
+chấp sự con yếu đuối, lỗi lầm, và xin Mẹ ban ơn cho con 
+được thêm lòng trìu mến cậy trông Mẹ, sốt sắng khẩn cầu 
+cùng Mẹ cho đến mãn đời.</p> <p> Lạy Mẹ dấu yêu, Lạy Mẹ 
+nhân lành, Lạy Mẹ La Vang con hết lòng nài xin Mẹ một lần 
+nữa. Xin Mẹ ban cho con ơn con xin... cùng Mẹ bây giờ. Ôi! 
+Con níu lấy Mẹ, chẳng muốn buông ra, cho đến khi Mẹ chúc 
+lành xuống phước cho con.</p> <p> Nhân danh Đức Chúa Giêsu 
+là Con yêu dấu Mẹ, cậy vì lòng kính mến Đức Chúa Giêsu, cậy 
+vì các sự thương khó Mẹ đã chịu, cậy vì lòng Mẹ hay thương 
+xót vô ngần, nhân danh Mẹ là Mẹ La Vang hay làm phép lạ, 
+xin Mẹ nhận lời con khấn nguyện. </p> <p>Amen.</p>
+ </div>
+
+<div>
+<h2>Kinh Cầu Ðức Mẹ La Vang</h2>
+<p>Lạy Mẹ Maria, Thánh Mẫu La Vang,
+</p><p>đầy muôn ơn phước, ngời chói hào quang,
+</p><p>muôn vàn Thần Thánh không ai sánh bằng.
+</p><p>
+</p><p>Ðức Chúa Trời đã đoái thương chọn Mẹ,
+</p><p>tinh tuyền thánh thiện,
+</p><p>sinh Ðấng cứu độ muôn loài.
+</p><p>
+</p><p>Mẹ đã chọn La Vang mà hiện đến,
+</p><p>cứu giúp hộ phù tổ tiên chúng con lương giáo,
+</p><p>giữa thời ly loạn cấm cách, khốn khổ trăm bề.
+</p><p>
+</p><p>Từ ấy gót chân Mẹ bước đến,
+</p><p>vẫn mãi đầy ơn thiêng.
+</p><p>
+</p><p>Ơn phần hồn ơn phần xác,
+</p><p>người bệnh tật kẻ ưu phiền,
+</p><p>nào ai cầu khẩn mà Mẹ không nhậm lời.
+</p><p>
+</p><p>Lạy Mẹ Maria, Thánh Mẫu La Vang,
+</p><p>Mẹ là Thánh Mẫu Chúa Trời,
+</p><p>cùng là Thánh Mẫu loài người chúng con.
+</p><p>
+</p><p>Cúi xin xuống phước hải hà,
+</p><p>đoái thương con cái thiết tha van nài.
+</p><p>
+</p><p>Xin cho chúng con tấm lòng từ bi nhân hậu,
+</p><p>đại lượng bao dung,
+</p><p>cùng nhau bồi đắp nền văn minh tình thương và sự sống.
+</p><p>
+</p><p>Xin Mẹ phù hộ chúng con,
+</p><p>luôn sống đức hạnh,
+</p><p>đầy lòng cậy trông.
+</p><p>
+</p><p>Và sau cuộc đời nầy,
+</p><p>xin cho chúng con được về sống bên Mẹ,
+</p><p>hưởng vinh phúc trong Chúa Ba Ngôi muôn đời. Amen.</p>
+</div>
+<div>
+<h2>Kinh Kính Thánh Martin De Porres</h2>
+<p>Lạy Thánh Martino rất khiêm nhường, lòng thương yêu nồng nhiệt của Người chẳng những che chở các anh em túng nghèo, mà lại cả những thú vật ngoài đồng, thật là gương huy hoàng của đức bác ái, chúng con kính mừng và cầu khấn Người.</p>
+<p></p>
+<p>Từ tòa cao Người ngự, xin đoái thương nhậm lời anh em túng nghèo kêu xin, để chúng con được bắt chước nhân đức Người mà yên vui trong địa vị Chúa đã đặt, và được mạnh mẽ, can đảm vác Thánh Giá theo chân Chúa Cứu Thế và Mẹ Sầu Bi, sau hết được về nước Thiên Ðàng. Vì công nghiệp Chúa Giêsu Kitô là Chúa chúng con. Amen.</p>
+</div>
+
+<div>
+<h2>Kinh Cầu Thánh Cecilia</h2>
+<p></p>
 <p>Lạy ơn bà thánh Cêcilia, vị tử đạo. Bà được Chúa thương yêu, bà không chịu khuất phục trước mọi sức mạnh trần thế. Bà tin tưởng Thiên Chúa còn hơn được lợi lộc thế gian. Bà không dâng hương tế thần ngoại, mà còn mạnh mẽ tuyên xưng danh Chúa Kitô, khiến nhiều người trở về với Thiên Chúa. Chúa đã yêu thương bà và cho bà được phúc tử vì đạo.</p>
-<p>Lạy thánh nữ Cêcilia, xin bà cầu thay nguyện giúp cho chúng con, để chúng con được mạnh mẽ, can đảm làm chứng cho Chúa khi còn sống ở đời này, để ngày sau được về hưởng vinh phúc trong Chúa trên nước Thiên Đàng. Vì công nghiệp Chúa Giêsu Kitô là Chúa chúng con. Amen.</p>
-<hr/>
-
-<h1>Kinh Cầu Nguyện Xin Chúa Chữa Lành</h1>
-<p>Chúc tụng Thiên Chúa là Đấng tạo thành trời đất, là Vua muôn loài, là Đấng Cứu Độ con. Lạy Chúa Giêsu, Chúa mời gọi những ai gồng gánh nặng nề, hãy đến với Chúa, Chúa sẽ bổ sức cho.</p>
-<p>Giờ đây, con dâng lên Chúa thân xác bệnh tật, yếu đuối, bất lực của con, xin Chúa nâng con lên, ôm con vào lòng và cho con tựa đầu vào trái tim của Chúa. Xin Máu và Nước Cứu Độ của Chúa bao phủ lấy con, rửa sạch tất cả những tội lỗi và các thương tích nơi thân xác của con. Xin đôi bàn tay chữa lành của Chúa chạm đến những nơi thương tích, bệnh tật của con, hầu con sẽ được lành mạnh.</p>
-<p>Cậy nhờ các roi đòn của Chúa đã chịu vì tội lỗi của con, cho con thêm sức mạnh để có thể chịu đựng những đau đớn cho nên. Xin Ánh Sáng Phục Sinh của Chúa, chiếu soi vào những nơi tối tăm, chết chóc trong con người của con, để con được hồi sinh cả về thể xác và tinh thần. Cám ơn Chúa Giêsu là Đấng Cứu Độ con.</p>
+<p>Lạy thánh nữ Cêcilia, xin bà cầu thay nguyện giúp cho chúng con, để chúng con được mạnh mẽ, can đảm làm chứng cho Chúa khi còn sống ở đời này, để ngày sau được về hưởng vinh phúc trong Chúa trên nước Thiên Đàng. Vì công nghiệp Chúa Giêsu Kitô là Chúa chúng con.</p>
+<p></p>
 <p>Amen</p>
+</div>
+
+  <div>
+    <h2>Kinh Cám Ơn</h2>
+    <p>Con cám ơn Đức Chúa trời là Chúa lòng lành vô cùng, chẳng bỏ con, chẳng để con không đời đời mà lại sinh ra con, cho con được làm người, cùng hằng gìn giữ con hằng che chở con, lại cho ngôi hai xuống thế làm người, chuộc tội chịu chết trên cây thánh giá vì con, lại cho con được đạo thánh Đức Chúa Trời cũng chịu nhiều ơn nhiều phép hội thánh nữa, và đã cho phần xác con (ngày / đêm) hôm nay được mọi sự lành, lại cứu lấy con kẻo phải chết tươi ăn năn tội chẳng kịp. Vậy các thánh ở trên nước thiên đàng cám ơn Đức Chúa Trời thế nào thì con cùng hợp cùng các thánh mà dâng chúa con cùng cám ơn như vậy, Amen.</p>
+</div>
+
+<div>
+<h2>Kinh Phó Dâng</h2>
+<p>Lạy Chúa con, con xin phó dâng linh hồn và xác con ở tay Chúa con. Chúa đã phù hộ con ban ngày, thì xin Chúa cũng gìn giữ con ban đêm, kẻo sa phạm tội gì mất lòng Chúa hay là chết tươi ăn năn tội chẳng kịp. Chớ gì sống chết con được giữ một lòng kính mến Chúa luôn. Amen.</p>
+</div>
+
+  <div>
+    <h2>Kinh Vực Sâu</h2>
+    <p>Lạy Chúa, con ở dưới vực sâu kêu lên Chúa, xin Chúa hãy nhậm lời con kêu van. Hãy lắng nghe tiếng con cầu xin. Nếu Chúa chấp tội nào ai rỗi được? Bởi Chúa hằng có lòng lành, cùng vì lời Chúa phán hứa. Con đã trông cậy Chúa. Linh hồn con cậy vì lời hứa ấy, thì đã trông cậy Chúa. Những kẻ làm dân Người đêm ngày hãy trông cậy Người cho liên, vì Người rất nhân lành hay thương vô cùng, sẽ tha hết mọi tội lỗi kẻ làm dân Người thay thảy. Lạy Chúa, xin ban cho các linh hồn (… tên …) được nghỉ ngơi đời đời, và được sáng soi vô cùng. Lạy Chúa, xin cứu lấy các linh hồn cho khỏi tù ngục, mà được nghỉ yên. Amen.</p>
+  </div>
+
+  <div>
+    <h2>Kinh Cầu Cho Các Linh Hồn</h2>
+    <p>Lạy ơn Đức Chúa Giêsu, Chúa đã phán dạy rằng: “Bay hãy xin thì bay sẽ được”. Vậy con xin Chúa lòng lành vô cùng, thương đến các linh hồn nơi luyện ngục. Xin Chúa nghe lời con cầu xin kêu van, cho linh hồn ông bà, cha mẹ, anh em, bạn hữu con. Xin Chúa mở cửa Thiên Đàng cho các linh hồn ấy vào. Xin cho các linh hồn ấy được sự sáng vô cùng hằng soi cho liên. Amen.</p>
+  </div>
+
+<div>
+<h2>Kinh Cầu Nguyện Xin Chúa Chữa Lành</h2>
+<p>Chúc tụng Thiên Chúa là Đấng tạo thành trời đất, là Vua muôn loài, là Đấng Cứu Độ con.</p>
+<p>Lạy Chúa Giêsu, Chúa mời gọi những ai gồng gánh nặng nề, hãy đến với Chúa, Chúa sẽ bổ sức cho.</p>
+<p>Giờ đây, con dâng lên Chúa thân xác bệnh tật, yếu đuối, bất lực của con, xin Chúa nâng con lên, ôm con vào lòng và cho con tựa đầu vào trái tim của Chúa.</p>
+<p>Xin Máu và Nước Cứu Độ của Chúa bao phủ lấy con, rửa sạch tất cả những tội lỗi và các thương tích nơi thân xác của con.</p>
+<p>Xin đôi bàn tay chữa lành của Chúa chạm đến những nơi thương tích, bệnh tật của con, hầu con sẽ được lành mạnh.</p>
+<p>Cậy nhờ các roi đòn của Chúa đã chịu vì tội lỗi của con, cho con thêm sức mạnh để có thể chịu đựng những đau đớn cho nên.</p>
+<p>Xin Ánh Sáng Phục Sinh của Chúa, chiếu soi vào những nơi tối tăm, chết chóc trong con người của con, để con được hồi sinh cả về thể xác và tinh thần.</p>
+<p>Cám ơn Chúa Giêsu là Đấng Cứu Độ con. Amen.</p>
+</div>
+
+<div>
+<h2>Kinh Cầu Cha Trương Bửu Diệp</h2>
+<p>Lạy Thiên Chúa Toàn Năng hằng hữu / chúng con cảm tạ Chúa đã ban cho giáo hội Việt Nam / một vị mục tử nhân hiền / là Cha Phanxicô Trương Bửu Diệp.</p>
+<p>Là một KiTô hữu, / Cha đã sống xứng đáng ơn gọi làm con Chúa, / với lòng tin son sắt, / lòng cậy bền đỗ / và lòng kính mến dạt dào / đối với Chúa, với Giáo Hội và với Con người.</p>
+<p>Là một Linh Mục, / Cha là hiện thân của Đức KiTô , vị mục tử tối cao, / đã tự nguyện hiến dâng mạng sống mình, / để Đoàn Chiên được sống và sống dồi dào.</p>
+<p>Là một Tông Đồ luôn thao thức loan báo Tin Mừng, / Cha là họa ảnh của lòng Chúa xót thương / hay thương xót những người nghèo khổ , yếu đau , tội lỗi</p>
+<p>Đặc biệt Cha rất thương yêu Anh Chị Em lương dân, / và thường chuyển cầu ơn Chúa cho họ, / khiến ai nấy đều quí mến và chạy đến xin Cha giúp đỡ.</p>
+<p>Nhờ Cha nguyện giúp cầu thay, / xin Chúa thương ban cho chúng con điều chúng con đang cầu khẩn... / với niềm hy vọng sớm thấy Cha được vinh hiển trong hàng ngũ các Thánh trên Thiên Quốc. / Amen.</p>
+</div>
+
+<h2>Kinh xin ơn với Đức Hồng Y Phanxicô Xaviê Nguyễn Văn Thuận</h2>
+<div>
+<p>Lạy Thiên Chúa toàn năng và hằng có đời đời, là Cha và Con và Thánh Thần,</p>
+<p>con cảm tạ Chúa vì đã ban cho Hội Thánh gương chứng tá anh dũng của Đức Hồng Y Phanxicô Xaviê Nguyễn văn Thuận.</p>
+<p></p>
+<p>Kinh nghiệm khổ đau trong ngục tù, được ngài sống liên kết với Chúa Kitô chịu đóng đinh,</p>
+<p>dưới bóng che chở hiền mẫu của Mẹ Maria,</p>
+<p>đã rèn luyện ngài nên một chứng nhân sáng ngời cho Hội Thánh và toàn thế giới, về sự hiệp nhất và tha thứ, cũng như về công lý và hòa bình.</p>
+<p></p>
+<p>Con ngưòi dễ thương mến cùng với sứ vụ mục tử giám mục của ngài tỏa chiếu rạng ngời ánh sáng của đức tin, nhiệt tâm của niềm hy vọng và sức sống nồng ấm của đức ái.</p>
+<p></p>
+<p>Giờ đây, nhờ lời bầu cử của ngài và theo thánh ý Chúa, xin Chúa ban cho con được ơn đang cầu khẩn, với niềm hy vọng thấy ngài sớm được vinh hiển trên bàn thờ. Amen!</p>
+</div>
+
+<div>
+<h2>Kinh Thánh Giuse</h2>
+<p>Kính chào Đấng Gìn giữ Đấng Cứu Thế,</p>
+<p>Bạn trăm năm của Đức Trinh Nữ Maria.</p>
+<p>Chúa đã trao Con Một của Chúa cho ngài;</p>
+<p>Mẹ Maria đã tin tưởng vào ngài;</p>
+<p>Chúa Kitô đã lớn lên thành người cùng với ngài.</p>
+<p></p>
+<p>Lạy Thánh Giuse diễm phúc,</p>
+<p>xin cũng hãy tỏ ra ngài là cha của chúng con</p>
+<p>và hướng dẫn chúng con đi trên đường đời.</p>
+<p>Xin ban cho chúng con ân sủng, lòng thương xót và lòng can đảm,</p>
+<p>và xin bảo vệ chúng con khỏi mọi sự dữ. Amen.</p>
+</div>
 
 </body>
 </html>
